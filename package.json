@@ -2,6 +2,7 @@
   "name": "lazykitten",
   "lazykitten": {
       "port" : "9494",
+      "man": false,
       "json" : {
         "stat": "ok",
         "msg": "Soft kitty ~ Warm kitty ~ Little ball of fur."
@@ -34,6 +35,7 @@
     "jade": "*",
     "less-middleware": "*",
     "optimist" : "*",
-    "colorful" : "*"
+    "colorful" : "*",
+    "request" : "*"
   }
 }

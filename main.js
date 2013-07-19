@@ -10,10 +10,10 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , fs = require('fs')
-  , pkg = JSON.parse(fs.readFileSync('./package.json'))
+  , pkg = JSON.parse(fs.readFileSync('../package.json'))
   , optimist = require('optimist')
   , argv = optimist.argv
-  , color = require('colorful')
+  , color = require('colorful');
 
 exports.start = function() {
 
