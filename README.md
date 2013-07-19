@@ -1,7 +1,6 @@
-# lazykitten
+# lazykitten ![](https://badge.fury.io/js/lazykitten.png)
 
 ![lazykitten](http://www.pagecovers.com/covers/animals/cute_lazy_kitten_cat.jpg)
-![](https://badge.fury.io/js/lazykitten.png)
 
 有的时候要进行一些极端点儿的测试，比如当用户网速极其慢的情况下，脚本或者页面的加载方式是怎样的，lazykitten是为这种测试设计的小工具。
 
@@ -18,11 +17,9 @@ lazykitten 可以生成一些api或者页面，按照使用者设定的返回时
 `$ lazykitten` 会在`localhost:9494` 开启服务，这个时候访问或者嵌入如下url
 
 ````
-
 GET/POST http://localhost:9494/api/:delay // 会根据delay设置的时间返回一个字符串
 GET http://localhost:9494/html/:delay // 会根据delay设置的时间返回一个html页面
 GET http://localhost:9494/image/:width/:height/:delay // 会根据delay设置的时间返回一个图像src（一只萌猫）
-
 ````
 
 ### 参数细节
