@@ -9,9 +9,12 @@ module.exports = function(req, res, next) {
             width: req.params.width,
             height: req.params.height
         },function(img){
-            console.log(img);
-            res.set('Content-Type', 'image/jpeg');
-            res.send(img);
+            if (img != 'err') {
+                res.set('Content-Type', 'image/jpeg');
+                res.send(img);
+            } else {
+                res.send('萌猫的网站挂了。。稍等一下吧喵，你也可以直接访问这里：http://placekitten.com/')
+            }
         });
 
     });
