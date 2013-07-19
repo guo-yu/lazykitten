@@ -1,14 +1,14 @@
 // index
 var delay = require('../lib/delay'),
     fetch = require('../lib/fetch'),
-    pkg = require('../pkg')(),
+    pkg = require('../pkg').fetch(),
     beaman = pkg.lazykitten.man;
 
 module.exports = function(req, res, next) {
     
     var type = 'kitten';
 
-    if (beaman) {
+    if (beaman == 'true') {
         type = 'beaman';
     }
 

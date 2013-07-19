@@ -10,7 +10,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , fs = require('fs')
-  , pkg = require('./pkg')()
+  , pkg = require('./pkg').fetch()
   , optimist = require('optimist')
   , argv = optimist.argv
   , color = require('colorful');
@@ -18,7 +18,8 @@ var express = require('express')
 exports.start = function() {
 
     var app = express(),
-        port = argv.p ? argv.p : pkg.lazykitten.port;
+        port = argv.p ? argv.p : pkg.lazykitten.port,
+        beaman = argv.beaman ? argv.beaman : false;
 
     app.set('port', process.env.PORT || port);
     app.set('views', __dirname + '/views');
@@ -33,6 +34,11 @@ exports.start = function() {
 
     if ('development' == app.get('env')) {
       app.use(express.errorHandler());
+    }
+
+    if (beaman) {
+      pkg.lazykitten.man = beaman;
+      require('./pkg').set(pkg);
     }
 
     app.locals({sys: pkg});
