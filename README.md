@@ -1,3 +1,5 @@
+![lazykitten](http://www.pagecovers.com/covers/animals/cute_lazy_kitten_cat.jpg)
+
 # lazykitten
 
 有的时候要进行一些极端点儿的测试，比如当用户网速极其慢的情况下，脚本或者页面的加载方式是怎样的，lazykitten是为这种测试设计的小工具。
