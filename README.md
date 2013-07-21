@@ -13,8 +13,8 @@ lazykitten 可以生成一些api或者页面，按照使用者设定的返回时
 #### lazykitten可接受的参数有
 
 - `lazykitten -p NUMBER` 指定服务在监听哪个端口，例如：`lazykitten -p 6789` 将在`6789端口`开启服务
-- `lazykitten --beaman true` 开启 `Be A Man` 模式，开启这个模式后请求image API将不会返回萌猫，会返回一些非常正经的图片。
-- `lazykitten --beaman false` 关闭`Be A Man` 模式，因为开启这个模式会被记住，可以采用这个方法手动关闭
+- `sudo lazykitten --beaman true` 开启 `Be A Man` 模式，开启这个模式后请求image API将不会返回萌猫，会返回一些非常正经的图片。
+- `sudo lazykitten --beaman false` 关闭`Be A Man` 模式，因为开启这个模式会被记住，可以采用这个方法手动关闭
 
 ### 如何使用
 
@@ -29,3 +29,8 @@ GET http://localhost:9494/image/:width/:height/:delay // 会根据delay设置的
 ### 参数细节
 
 - `delay[number]` 默认为秒，比如 `http://localhost:9494/api/3` 会在`3秒后`返回
+
+### Roadmap -> 0.1.0
+
+- 增加对静态资源的托管支持
+- 增加云服务
