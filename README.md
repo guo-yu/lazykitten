@@ -8,7 +8,15 @@ lazykitten 可以生成一些api或者页面，按照使用者设定的返回时
 
 ### 如何安装
 
-`$ sudo npm install lazykitten -g` 
+#### 全局安装（使用命令行）
+````
+$ sudo npm install lazykitten -g
+````
+
+#### 在项目中安装
+````
+$ npm install lazykitten 
+````
 
 #### lazykitten可接受的参数有
 
