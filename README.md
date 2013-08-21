@@ -18,12 +18,25 @@ lazykitten 可以生成一些api或者页面，按照使用者设定的返回时
 
 ### 如何使用
 
-`$ lazykitten` 会在`localhost:9494` 开启服务，这个时候访问或者嵌入如下url
+#### 使用CLI命令行界面
+````
+$ lazykitten
+````
+会默认在 `http://localhost:9494` 开启服务，这个时候访问或者嵌入如下url
 
 ````
 GET/POST http://localhost:9494/api/:delay // 会根据delay设置的时间返回一个字符串
 GET http://localhost:9494/html/:delay // 会根据delay设置的时间返回一个html页面
 GET http://localhost:9494/image/:width/:height/:delay // 会根据delay设置的时间返回一个图像src（一只萌猫）
+````
+
+#### 集成在你的node程序中使用
+````javascript
+var cat = require('lazykitten');
+var server = new Kitten({
+    beaman: false // 是否开启 be a man 模式
+});
+server.run()
 ````
 
 ### 参数细节
