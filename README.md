@@ -40,7 +40,7 @@ GET http://localhost:9494/image/:width/:height/:delay // 会根据delay设置的
 
 #### 集成在你的node程序中使用
 ````javascript
-var cat = require('lazykitten');
+var Kitten = require('lazykitten');
 var server = new Kitten({
     beaman: false // 是否开启 be a man 模式
 });
