@@ -8,7 +8,7 @@
             "msg": "Soft kitty ~ Warm kitty ~ Little ball of fur."
         }
     },
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "a cli tool to generate lazy api or html pages for test",
     "main": "main.js",
     "scripts": {

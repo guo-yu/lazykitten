@@ -53,10 +53,14 @@ var Server = function(params) {
   this.app = app;
 }
 
-Server.prototype.run = function(port) {
+Server.prototype.run = function(port,cb) {
   var p = port ? parseInt(port) : this.app.get('port');
   http.createServer(this.app).listen(p, function() {
-    console.log(color.yellow('[' + pkg.name + ']' + ' is running on ......' + ' ==> http://localhost:' + p));
+    if (cb && typeof(cb) == 'function') {
+      cb(p);
+    } else {
+      console.log(color.yellow('[' + pkg.name + ']' + ' is running on ......' + ' ==> http://localhost:' + p));
+    }
   });
 }
 
